@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.py-30{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+.d-flex{
+    display: flex;
+}
+.min-height-100{
+    min-height: 100vh;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+.mb-15{
+    margin-bottom: 15px;
+}
+.Home-section{
+    background: red;
+    min-height: 100vh;
+    background: url(../images/desktop/image-hero.jpg);
+    background-size: cover;
+    position: relative;
+}
+.Home-section .Home-title{
+    border: 2px solid #fff;
+    padding: 20px 30px;
+}
+.Home-section .Home-title h2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 35px;
+    color: #fff;
+    font-weight: 300;
+    line-height: 38px;
+}
+.Home-section .Home-title h2 span{
+    display: block;
+}
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+}
+.header .container{
+    padding: 20px 0;
+    align-items: center;
+}
+.header .nav .menu .menu-list{
+    display: inline-block;
+    margin-left: 16px;
+}
+.header .nav .menu .menu-list a{
+    color: #fff;
+    font-family: 'Alata', sans-serif;
+    font-size: 15px;
+    position: relative;
+    padding-bottom: 10px;
+    transition: all 300ms ease-in-out;
+}
+.header .nav .menu .menu-list a::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: all 300ms ease-in-out;
+}
+.header .nav .menu .menu-list a:hover::before{
+    width: 100%;
+    transition: all 300ms ease-in-out;
+}
+.header .nav .menu .menu-list a.active::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    transition: all 300ms ease-in-out;
+}
+.about-section .box{
+    width: 100px;
+    height: 100px;
+    background: rgb(196,106,205);
+    margin-left: -30px;
+    margin-bottom: 40px;
+}
+.about-section .about-title{
+    padding-left: 30px;
+}
+.about-section .about-title h2{
+    font-size: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.about-section .about-title h2 span{
+    display: block;
+}
+.about-section .about-title p{
+    font-size: 14px;
+    font-family: 'Alata', sans-serif;
+    color: #7c7c7c;
+    line-height: 25px;
+}
+.Creations-section .Creations-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.Creations-section .Creations-title h2{
+    font-size: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.Creations-section .Creations-title a{
+    background: #000000;
+    color: #fff;
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.Creations-section .Creations-item{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.Creations-section .Creations-item img{
+    border-radius: 3px;
+
+}
+.Creations-section .Creations-item .Creations-item-desc{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    padding: 20px 25px;
+}
+.Creations-section .Creations-item .Creations-item-desc h2{
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    line-height: 30px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.Creations-section .Creations-item .Creations-item-desc h2 span{
+    display: block;
+}
+.footer-main{
+    background: #000000;
+    padding: 20px 0;
+}
+.footer-main .footer-top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.footer-main .footer-top .logo img{
+    width: 120px;
+}
+.footer-main .footer-top .social a{
+    margin-left: 6px;
+}
+.footer-main .footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+.footer-main .footer-bottom  .menu-footer .menu-footer-list{
+    display: inline-block;
+    margin-left: 10px;
+}
+.footer-main .footer-bottom  .menu-footer .menu-footer-list a{
+    color: #fff;
+    font-family: 'Alata', sans-serif;
+}
+.footer-main .footer-bottom .copyright{
+    text-align: right;
+}
+.footer-main .footer-bottom .copyright p{
+    color: #fff;
+    font-family: 'Alata', sans-serif;
+
+}
+@media screen and (max-width:991px){
+    .footer-main .footer-top  {
+        flex-direction: column;
+    }
+    .footer-main .footer-top .logo{
+        margin-bottom: 20px;
+    }
+    .footer-main .footer-top .logo a{
+        text-align: center;
+        display: block;  
+    }
+    .footer-main .footer-top .social{
+        text-align: center;
+    }
+    .footer-main .footer-bottom .menu-footer{
+        text-align: center;
+    }
+    .footer-main .footer-bottom .menu-footer .menu-footer-list{
+        display: block;
+        margin-bottom: 20px;
+    }
+    .footer-main .footer-bottom  .copyright{
+        text-align: center;
+    }
+}
+.sidbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1000%;
+    background: #000000;
+    z-index: 999;
+    padding: 20px 30px;
+    display: none;
+}
+.sidbar.active{
+    display: block !important;
+    transition: all 300ms ease-in-out;
+}
+.sidbar .logo img{
+    width: 150px;
+}
+.sidbar .close{
+    display: inline-block;
+    float: right;
+}
+.sidbar .sidbar-menu {
+    padding-top: 50px;
+}
+.sidbar .sidbar-menu .sidbar-menu-list{
+    padding-bottom: 15px;
+}
+.sidbar .sidbar-menu .sidbar-menu-list a{
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 300;
+}
+.bars{
+    display: none;
+}
+@media screen and (max-width:815px){
+    .bars{
+        display: block;
+    }
+    .nav{
+        display: none;
+    }
+}
+@media screen and (max-width:575px) {
+    .header{
+        padding: 0 15px;
+    }
+}
